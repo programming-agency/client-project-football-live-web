@@ -5,13 +5,13 @@ import { Box } from '@mui/material';
 
 const Main = () => {
     return (
-        <Box ClassName='flex flex-col bg-fuchsia-400 p-5 h-screen'>
+        <Box className='flex flex-col justify-between bg-fuchsia-400 h-screen'>
 
             <Box ClassName="flex-grow ">
                 <Outlet />
             </Box>
 
-            <Box>
+            <Box ClassName="bg-red-500 ">
                 <LabelBottomNavigation />
             </Box>
         </Box>
