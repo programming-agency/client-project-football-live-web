@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Main from './Layout/Main';
 import Home from './Pages/Home/Home';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
 const router = createBrowserRouter([
@@ -24,10 +25,23 @@ const router = createBrowserRouter([
   },
 ]);
 
+const THEME = createTheme({
+  typography: {
+    "fontFamily": `"Poppins", "sans-serif", "Arial", sans-serif`,
+    "fontSize": 14,
+    "fontWeightLight": 300,
+    "fontWeightRegular": 500,
+    "fontWeightMedium": 600
+  }
+});
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+     <ThemeProvider theme={THEME}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
