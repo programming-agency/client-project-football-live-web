@@ -14,6 +14,9 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
   const navigate = useNavigate();
 
+  React.useEffect(() => {
+    if (value === 0) navigate('/')
+  })
 
   return (
     <Box className="w-full">

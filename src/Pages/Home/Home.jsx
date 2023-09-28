@@ -51,7 +51,7 @@ const Home = () => {
                     </Box>
                 </Box>
 
-                <Box className='flex gap-3 overflow-scroll '>                     
+                <Box className='flex gap-3 p-2 overflow-scroll '>                     
                     <FixtureCard />
                     <FixtureCard />
                     <FixtureCard />
