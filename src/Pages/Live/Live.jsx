@@ -1,28 +1,40 @@
-import { Box, Button,AppBar  } from '@mui/material' 
-import RecentMatchCard from '../Component/RecentMatchCard'
+import { Box, } from '@mui/material'
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import TabPanel from '@mui/lab/TabPanel'
+import TabContext from '@mui/lab/TabContext';
+import TabList from '@mui/lab/TabList';
 import LiveTv from '@mui/icons-material/LiveTv';
- 
+import NavBar from '../Component/NavBar';
+
 
 export default function Live() {
+    const [value, setValue] = React.useState('1');
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
     return (
         <Box>
-            <AppBar position='relative' className='px-5'>
-                <Box className="flex gap-3 items-center text-3xl py-5">
-                    <Box>
-                        <LiveTv />
-                    </Box>
-                    <Box>
-                        Live
-                    </Box>
-                </Box>
-            </AppBar>
-            <Box className="flex justify-between items-center px-5">
-                <Box>Recent Matches</Box>
-                <Box> <Button color='warning'> See More</Button></Box>
+            <Box>
+                <NavBar emoji={<LiveTv />} name="Live" />
             </Box>
-
-            <RecentMatchCard />
-          
+            <Box sx={{ width: '100%', typography: 'body1' }}>
+                <TabContext value={value}>
+                    <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                        <TabList
+                            onChange={handleChange}
+                            aria-label="lab API tabs example">
+                            <Tab label="Live Score" value="1" />
+                            <Tab label="Live" value="2" />
+                        </TabList>
+                    </Box>
+                    <TabPanel value="1">Item One</TabPanel>
+                    <TabPanel value="2">Item Two</TabPanel>
+                </TabContext>
+            </Box>
         </Box>
     )
 }
