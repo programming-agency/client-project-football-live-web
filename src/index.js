@@ -9,6 +9,11 @@ import {
 } from "react-router-dom";
 import Main from './Layout/Main';
 import Home from './Pages/Home/Home';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Matches from './Pages/Matches/Matches';
+import Live from './Pages/Live/Live';
+import League from './Pages/League/League';
+import More from './Pages/More/More';
 
 
 const router = createBrowserRouter([
@@ -19,15 +24,44 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/matches',
+        element: <Matches />
+      },
+      {
+        path: '/live',
+        element: <Live />
+      },
+      {
+        path: '/league',
+        element: <League />
+      },
+      {
+        path: '/more',
+        element: <More />
       }
     ]
   },
 ]);
 
+const THEME = createTheme({
+  typography: {
+    "fontFamily": `"Poppins", "sans-serif", "Arial", sans-serif`,
+    "fontSize": 14,
+    "fontWeightLight": 300,
+    "fontWeightRegular": 500,
+    "fontWeightMedium": 600
+  }
+});
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={THEME}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

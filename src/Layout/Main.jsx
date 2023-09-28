@@ -1,17 +1,17 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import LabelBottomNavigation from './LabelBottomNavigation';
-import { Box } from '@mui/material';
+import { Box, Paper } from '@mui/material';
 
 const Main = () => {
     return (
-        <Box className='flex flex-col justify-between bg-fuchsia-400 h-screen'>
+        <Box className=" h-screen flex flex-col">
 
-            <Box ClassName="flex-grow ">
+            <Box className="flex-grow ">
                 <Outlet />
             </Box>
 
-            <Box ClassName="bg-red-500 ">
+            <Box className="border-t">
                 <LabelBottomNavigation />
             </Box>
         </Box>
