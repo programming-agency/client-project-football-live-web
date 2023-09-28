@@ -33,10 +33,41 @@ export default function Live() {
                         </TabList>
                     </Box>
                     {/*  Score card */}
-                    <TabPanel value="1">
 
-                        Item One
-                        <ScoreCard />
+                    <TabPanel value="1">
+                        <Box className='h-[100%] flex flex-col gap-5'>
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                            <ScoreCard />
+                        </Box>
                     </TabPanel>
                     {/* live tab */}
                     <TabPanel value="2">

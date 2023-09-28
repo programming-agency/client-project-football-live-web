@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     font-family: 'Poppins', sans-serif !important;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -6px !important;
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: 100%;
 }

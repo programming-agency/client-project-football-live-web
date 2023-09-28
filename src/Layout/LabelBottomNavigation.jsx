@@ -7,13 +7,13 @@ import EmojiEvents from '@mui/icons-material/EmojiEventsOutlined';
 import ReadMoreIcon from '@mui/icons-material/ReadMoreOutlined';
 import HomeIcon from '@mui/icons-material/HomeOutlined';
 import MatchIcon from '@mui/icons-material/CalendarMonthOutlined';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
   const navigate = useNavigate();
-  
+
 
   return (
     <Box className="w-full">

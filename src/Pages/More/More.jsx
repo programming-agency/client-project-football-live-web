@@ -1,4 +1,4 @@
-import { AppBar, Box } from '@mui/material'
+import { Box } from '@mui/material'
 import ReadMoreIcon from '@mui/icons-material/ReadMoreOutlined';
 import React from 'react'
 import NavBar from '../Component/NavBar';
@@ -11,7 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 import ShareIcon from '@mui/icons-material/Share';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
- 
+
 
 export default function More() {
   const [open, setOpen] = React.useState(true);
