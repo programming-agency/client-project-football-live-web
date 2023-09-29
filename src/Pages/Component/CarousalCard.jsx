@@ -13,7 +13,7 @@ export default function CarousalCard({ title, group, teamName1, teamName2, teamP
                 {/* left section */}
                 <Box>
                     <Box className='flex justify-center'>
-                        <img className='h-12' src={teamPhoto1} alt="" />
+                        <img className='h-10' src={teamPhoto1} alt="" />
                     </Box>
                     <Box className='text-base mt-2'> {teamName1} </Box>
                     <Box className='text-center text-black text-[12px]'>Home</Box></Box>
@@ -27,7 +27,7 @@ export default function CarousalCard({ title, group, teamName1, teamName2, teamP
                 <Box>
                     {/* right section */}
                     <Box className='flex justify-center'>
-                        <img className='h-12' src={teamPhoto2} alt="" />
+                        <img className='h-10' src={teamPhoto2} alt="" />
                     </Box>
                     <Box className='text-base mt-2'>{teamName2}</Box>
                     <Box className='text-center text-black text-[12px]'>Away</Box>

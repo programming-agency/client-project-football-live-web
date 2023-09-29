@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './index.css'; 
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -14,6 +13,7 @@ import Matches from './Pages/Matches/Matches';
 import Live from './Pages/Live/Live';
 import League from './Pages/League/League';
 import More from './Pages/More/More';
+import MoreRecentCard from './Pages/Component/MoreRecentCard';
 
 
 const router = createBrowserRouter([
@@ -42,8 +42,12 @@ const router = createBrowserRouter([
         element: <More />
       },
       {
+        path: '/moreRecentCard',
+        element: <MoreRecentCard />
+      },
+      {
         path: '/*',
-        element: <Home/>
+        element: <Home />
       }
     ]
   },

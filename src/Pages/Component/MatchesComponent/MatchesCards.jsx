@@ -13,8 +13,8 @@ export default function MatchesCards() {
             {/* sub Header */}
 
             <Box className='space-y-3'>
-                <Paper elevation={3}>
-                    <Box className='flex justify-between items-center px-2 py-5'>
+                <Paper elevation={3} >
+                    <Box className='flex justify-between items-center px-5 py-5'>
                         <Box className='flex gap-8  items-center'>
                             <Box className='w-20 space-y-2'>
                                 <Box className="text-sm whitespace-nowrap text-center">30-sep-2023</Box>
@@ -22,11 +22,11 @@ export default function MatchesCards() {
                             </Box>
                             <Box className='space-y-3'>
                                 <Box className='flex gap-3 items-center'>
-                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box><img className='h-6' src="/barsa.png" alt="" /></Box>
                                     <Box>Manta FC</Box>
                                 </Box>
                                 <Box className='flex gap-3 items-center'>
-                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box><img className='h-6' src="/barsa.png" alt="" /></Box>
                                     <Box>lebar Pull </Box>
                                 </Box>
                             </Box>
@@ -39,7 +39,7 @@ export default function MatchesCards() {
 
                 </Paper>
                 <Paper elevation={3}>
-                    <Box className='flex justify-between items-center px-2 py-5'>
+                    <Box className='flex justify-between items-center px-5 py-5'>
                         <Box className='flex gap-8 items-center'>
                             <Box className='w-20'>
                                 <Box className="text-base text-red-500 whitespace-nowrap text-center">CANC</Box>
@@ -47,11 +47,11 @@ export default function MatchesCards() {
 
                             <Box>
                                 <Box className='flex gap-3 items-center'>
-                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box><img className='h-6' src="/barsa.png" alt="" /></Box>
                                     <Box>Vartimov</Box>
                                 </Box>
                                 <Box className='flex gap-3 items-center'>
-                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box><img className='h-6' src="/barsa.png" alt="" /></Box>
                                     <Box>lebar Pull </Box>
                                 </Box>
                             </Box>
@@ -64,7 +64,7 @@ export default function MatchesCards() {
 
                 </Paper>
                 <Paper elevation={3}>
-                    <Box className='flex justify-between items-center px-2 py-5'>
+                    <Box className='flex justify-between items-center px-6 py-5'>
                         <Box className='flex gap-8 items-center'>
                             <Box className='w-20'>
                                 <Box className="text-base text-red-500 whitespace-nowrap text-center">PST</Box>
@@ -72,11 +72,11 @@ export default function MatchesCards() {
 
                             <Box className='space-y-3'>
                                 <Box className='flex gap-3 items-center'>
-                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box><img className='h-6' src="/barsa.png" alt="" /></Box>
                                     <Box>Vartimov</Box>
                                 </Box>
                                 <Box className='flex gap-3 items-center'>
-                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box><img className='h-6' src="/barsa.png" alt="" /></Box>
                                     <Box>lebar Pull </Box>
                                 </Box>
                             </Box>
@@ -84,15 +84,15 @@ export default function MatchesCards() {
                         {/* Icon  */}
                         <Box >
                             <Box className='space-y-3'>
-                                <Box className="text-sm whitespace-nowrap text-center">0</Box>
-                                <Box className="text-sm whitespace-nowrap text-center">1</Box>
+                                <Box className="text-base  text-center">0</Box>
+                                <Box className="text-base   text-center">1</Box>
                             </Box>
                         </Box>
                     </Box>
 
-                </Paper>                
+                </Paper>
                 <Paper elevation={3}>
-                    <Box className='flex justify-between items-center px-2 py-5'>
+                    <Box className='flex justify-between items-center px-5 py-5'>
                         <Box className='flex gap-8 items-center'>
                             <Box className='w-20 space-y-2'>
                                 <Box className="text-sm whitespace-nowrap text-center">30-sep-2023</Box>

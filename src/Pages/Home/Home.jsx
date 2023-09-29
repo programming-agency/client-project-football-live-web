@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, InputAdornment, OutlinedInput } from '@mui/material';
+import { Box, FormControl, InputAdornment, Link, OutlinedInput } from '@mui/material';
 import React from 'react';
 import HomeIcon from '@mui/icons-material/HomeOutlined';
 import RecentMatchCard from '../Component/RecentMatchCard';
@@ -22,9 +22,13 @@ const Home = () => {
 
             {/* Recently match section start */}
             <Box>
-                <Box className="flex justify-between items-center px-5">
+                <Box className="flex mt-5 justify-between items-center px-5">
                     <Box className='text-xs font-semibold'>Recent Matches</Box>
-                    <Box> <Button color='warning'> See More</Button></Box>
+
+                    <Box>
+                        
+                        <Link href="/moreRecentCard" underline="none"> See More</Link>
+                    </Box>
                 </Box>
                 <Box className='flex flex-col gap-2 px-3'>
                     <RecentMatchCard />
@@ -38,6 +42,7 @@ const Home = () => {
             {/* weekly match section start */}
 
             <Box>
+            
                 <Box className="flex mt-5 gap-3  items-center px-5  ">
                     <Box className='text-xs  whitespace-nowrap  font-semibold'> Weekly Fixture</Box>
                     <Box className='w-full'>
@@ -51,8 +56,8 @@ const Home = () => {
                     </Box>
                 </Box>
 
-                <Box className='flex gap-3 p-2 overflow-scroll '>                     
-                    <FixtureCard  />
+                <Box className='flex gap-3 p-2 overflow-scroll '>
+                    <FixtureCard />
                     <FixtureCard />
                     <FixtureCard />
                     <FixtureCard />

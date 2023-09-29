@@ -10,7 +10,7 @@ export default function DailyMatchCard() {
                 <Box> 4.Liga Divizie F, Czech-Republic</Box>
             </Box>
             <Paper elevation={3}>
-                <Box className='flex justify-between items-center px-2 py-5'>
+                <Box className='flex justify-between items-center px-5 py-5'>
                     <Box className='flex gap-8 items-center'>
                         <Box className='w-20 space-y-2'>
                             <Box className="text-sm whitespace-nowrap text-center">30-sep-2023</Box>
