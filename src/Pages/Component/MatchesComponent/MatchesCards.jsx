@@ -13,89 +13,109 @@ export default function MatchesCards() {
             {/* sub Header */}
 
             <Box className='space-y-3'>
-                <Paper elevation={5} className='px-3 py-3'>
-                    <Box className='flex  gap-10 items-center'>
-                        <Box className='w-24'>                             
-                            <Box className="text-base text-red-500 text-center">CANC</Box>
-                        </Box>
-                        <Box className='space-y-3 w-40'>
-                            <Box className='flex gap-3 items-center'>
-                                <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
-                                <Box>Vartimov</Box>
+                <Paper elevation={3}>
+                    <Box className='flex justify-between items-center px-2 py-5'>
+                        <Box className='flex gap-8  items-center'>
+                            <Box className='w-20 space-y-2'>
+                                <Box className="text-sm whitespace-nowrap text-center">30-sep-2023</Box>
+                                <Box className="text-sm whitespace-nowrap text-center">12:30 AM</Box>
                             </Box>
-                            <Box className='flex gap-3 items-center'>
-                                <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
-                                <Box>Manta FC</Box>
+                            <Box className='space-y-3'>
+                                <Box className='flex gap-3 items-center'>
+                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box>Manta FC</Box>
+                                </Box>
+                                <Box className='flex gap-3 items-center'>
+                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box>lebar Pull </Box>
+                                </Box>
                             </Box>
                         </Box>
-                        <Box className='ml-24'>
+                        {/* Icon  */}
+                        <Box >
                             <NotificationImportantIcon />
                         </Box>
                     </Box>
+
                 </Paper>
-                <Paper elevation={5} className='px-3 py-3'>
-                    <Box className='flex  gap-10 items-center'>
-                        <Box className='w-24'>
-                            <Box className="text-sm text-center">30-sep-2023</Box>
-                            <Box className="text-sm text-center">12:30 AM</Box>
-                        </Box>
-                        <Box className='space-y-3 w-40'>
-                            <Box className='flex gap-3 items-center'>
-                                <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
-                                <Box>Sevilla</Box>
-                            </Box>
-                            <Box className='flex gap-3 items-center'>
-                                <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
-                                <Box> Paradou</Box>
-                            </Box>
-                        </Box>
-                        <Box className='ml-24'>
-                            <NotificationImportantIcon />
-                        </Box>
-                    </Box>
-                </Paper>
-                <Paper elevation={5} className='px-3 py-3'>
-                    <Box className='flex  gap-10 items-center'>
-                        <Box className='w-24'>
-                            <Box className="text-sm text-center">30-sep-2023</Box>
-                            <Box className="text-sm text-center">12:30 AM</Box>
-                        </Box>
-                        <Box className='space-y-3 w-40'>
-                            <Box className='flex gap-3 items-center'>
-                                <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
-                                <Box>Paris</Box>
-                            </Box>
-                            <Box className='flex gap-3 items-center'>
-                                <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
-                                <Box>MC Oran</Box>
-                            </Box>
-                        </Box>
-                        <Box className='ml-24'>
-                            <NotificationImportantIcon />
-                        </Box>
-                    </Box>
-                </Paper>
-                <Paper elevation={5} className='px-3 py-3'>
-                    <Box className='flex  gap-10 items-center'>
-                        <Box className='w-24'>
-                            <Box className="text-sm text-center">30-sep-2023</Box>
-                            <Box className="text-sm text-center">12:30 AM</Box>
-                        </Box>
-                        <Box className='space-y-3 w-40'>
-                            <Box className='flex gap-3 items-center'>
-                                <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
-                                <Box>Cibao</Box>
-                            </Box>
-                            <Box className='flex gap-3 items-center'>
-                                <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
-                                <Box>Avia</Box>
+                <Paper elevation={3}>
+                    <Box className='flex justify-between items-center px-2 py-5'>
+                        <Box className='flex gap-8 items-center'>
+                            <Box className='w-20'>
+                                <Box className="text-base text-red-500 whitespace-nowrap text-center">CANC</Box>
                             </Box>
 
+                            <Box>
+                                <Box className='flex gap-3 items-center'>
+                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box>Vartimov</Box>
+                                </Box>
+                                <Box className='flex gap-3 items-center'>
+                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box>lebar Pull </Box>
+                                </Box>
+                            </Box>
                         </Box>
-                        <Box className='ml-24'>
+                        {/* Icon  */}
+                        <Box >
                             <NotificationImportantIcon />
                         </Box>
                     </Box>
+
+                </Paper>
+                <Paper elevation={3}>
+                    <Box className='flex justify-between items-center px-2 py-5'>
+                        <Box className='flex gap-8 items-center'>
+                            <Box className='w-20'>
+                                <Box className="text-base text-red-500 whitespace-nowrap text-center">PST</Box>
+                            </Box>
+
+                            <Box className='space-y-3'>
+                                <Box className='flex gap-3 items-center'>
+                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box>Vartimov</Box>
+                                </Box>
+                                <Box className='flex gap-3 items-center'>
+                                    <Box><img className='h-5' src="/barsa.png" alt="" /></Box>
+                                    <Box>lebar Pull </Box>
+                                </Box>
+                            </Box>
+                        </Box>
+                        {/* Icon  */}
+                        <Box >
+                            <Box className='space-y-3'>
+                                <Box className="text-sm whitespace-nowrap text-center">0</Box>
+                                <Box className="text-sm whitespace-nowrap text-center">1</Box>
+                            </Box>
+                        </Box>
+                    </Box>
+
+                </Paper>                
+                <Paper elevation={3}>
+                    <Box className='flex justify-between items-center px-2 py-5'>
+                        <Box className='flex gap-8 items-center'>
+                            <Box className='w-20 space-y-2'>
+                                <Box className="text-sm whitespace-nowrap text-center">30-sep-2023</Box>
+                                <Box className="text-sm whitespace-nowrap text-center">12:30 AM</Box>
+                            </Box>
+
+                            <Box className='space-y-3'>
+                                <Box className='flex gap-3 items-center'>
+                                    <Box><img className='h-6' src="/barsa.png" alt="" /></Box>
+                                    <Box>Vartimov</Box>
+                                </Box>
+                                <Box className='flex gap-3 items-center'>
+                                    <Box><img className='h-6' src="/barsa.png" alt="" /></Box>
+                                    <Box>lebar Pull </Box>
+                                </Box>
+                            </Box>
+                        </Box>
+                        {/* Icon  */}
+                        <Box >
+                            <NotificationImportantIcon />
+                        </Box>
+                    </Box>
+
                 </Paper>
             </Box>
         </Box>

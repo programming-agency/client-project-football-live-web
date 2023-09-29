@@ -6,8 +6,9 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import NavBar from '../Component/NavBar';
-import MatchesDayCard from '../Component/MatchesComponent/MatchesDayCard';
+
 import MatchesCards from '../Component/MatchesComponent/MatchesCards';
+import DailyMatchCard from '../Component/MatchesComponent/DailyMatchCard';
 
 
 
@@ -47,13 +48,17 @@ export default function Matches() {
                     <TabPanel value="1">
                         {/* Wed 27 Sep */}
                         <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <DailyMatchCard />
                             <MatchesCards />
                         </Box>
 
@@ -61,27 +66,39 @@ export default function Matches() {
                     <TabPanel value="2">
                         {/* Yesterday  */}
                         <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <MatchesCards />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <DailyMatchCard />
                             <MatchesCards />
                         </Box>
                     </TabPanel>
                     <TabPanel value="3">
-
+                        {/* today */}
                         <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
 
-                            <MatchesDayCard />
+                            <DailyMatchCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <MatchesCards />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <DailyMatchCard />
                             <MatchesCards />
                         </Box>
 
@@ -89,13 +106,20 @@ export default function Matches() {
                     <TabPanel value="4">
                         {/* Tomorrow */}
                         <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+
+                            <DailyMatchCard />
+                            <DailyMatchCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <DailyMatchCard />
                             <MatchesCards />
                         </Box>
                     </TabPanel>
@@ -103,40 +127,62 @@ export default function Matches() {
                     <TabPanel value="5">
                         {/* Sun 01 Oct */}
                         <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+
+                            <DailyMatchCard />
+                            <DailyMatchCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <DailyMatchCard />
                             <MatchesCards />
                         </Box>
                     </TabPanel>
                     <TabPanel value="6">
                         {/* Mon 02 Oct */}
                         <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
-                            <MatchesDayCard />
+
+                            <DailyMatchCard />
+                            <DailyMatchCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
+                            <DailyMatchCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <DailyMatchCard />
                             <MatchesCards />
                         </Box>
-
                     </TabPanel>
                     <TabPanel value="7">
                         {/* Tue 03 Oct */}
                         <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+
+                            <DailyMatchCard />
+                            <DailyMatchCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
-                            <MatchesDayCard />
+                            <DailyMatchCard />
+                            <DailyMatchCard />
                             <MatchesCards />
-                            <MatchesDayCard />
+                            <MatchesCards />
+                            <DailyMatchCard />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <MatchesCards />
+                            <DailyMatchCard />
                             <MatchesCards />
                         </Box>
                     </TabPanel>

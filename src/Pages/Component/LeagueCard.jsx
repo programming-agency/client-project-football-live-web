@@ -4,8 +4,7 @@ import React from 'react'
 
 export default function LeagueCard() {
     return (
-        <Paper>
-
+        <Paper elevation={3}>
             <Box className='flex items-center justify-around py-2'>
                 <Box>
                     <Box> <img className='h-5 ' src="/barsa.png" alt="" /></Box>
