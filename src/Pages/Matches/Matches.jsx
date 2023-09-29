@@ -6,9 +6,13 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import NavBar from '../Component/NavBar';
+import MatchesDayCard from '../Component/MatchesComponent/MatchesDayCard';
+import MatchesCards from '../Component/MatchesComponent/MatchesCards';
+
+
 
 export default function Matches() {
-    const [value, setValue] = React.useState('1');
+    const [value, setValue] = React.useState('3');
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -16,8 +20,9 @@ export default function Matches() {
 
     return (
         <Box>
+            {/* navbar */}
             <NavBar emoji={<MatchIcon />} name="  Matches" />
-
+            {/* sub header  */}
             <Box sx={{ width: '100%', typography: 'body1' }}>
                 <TabContext value={value}>
                     <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -28,27 +33,113 @@ export default function Matches() {
                             scrollButtons="auto" // Set scrollButtons to auto to show scroll buttons when needed
                             allowScrollButtonsMobile // Enable scroll buttons on mobile devices
                         >
-                            <Tab label="Item One" value="1" />
-                            <Tab label="Item Two" value="2" />
-                            <Tab label="Item Three" value="3" />
-                            <Tab label="Item Three" value="4" />
-                            <Tab label="Item Three" value="5" />
-                            <Tab label="Item Three" value="6" />
-                            <Tab label="Item Three" value="7" />
-                            <Tab label="Item Three" value="8" />
-                            <Tab label="Item Three" value="9" />
+                            <Tab label="Wed 27 Sep" value="1" />
+                            <Tab label="Yesterday" value="2" />
+                            <Tab label="Today" value="3" />
+                            <Tab label="Tomorrow" value="4" />
+                            <Tab label="Sun 01 Oct" value="5" />
+                            <Tab label="Mon 02 Oct" value="6" />
+                            <Tab label="Tue 03 Oct" value="7" />
                             {/* Add more tabs as needed */}
                         </TabList>
                     </Box>
-                    <TabPanel value="1">Item One</TabPanel>
-                    <TabPanel value="2">Item Two</TabPanel>
-                    <TabPanel value="3">Item Three</TabPanel>
-                    <TabPanel value="4">Item Three</TabPanel>
-                    <TabPanel value="5">Item Three</TabPanel>
-                    <TabPanel value="6">Item Three</TabPanel>
-                    <TabPanel value="7">Item Three</TabPanel>
-                    <TabPanel value="8">Item Three</TabPanel>
-                    <TabPanel value="9">Item Three</TabPanel>
+                    {/*show match tabs  */}
+                    <TabPanel value="1">
+                        {/* Wed 27 Sep */}
+                        <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                        </Box>
+
+                    </TabPanel>
+                    <TabPanel value="2">
+                        {/* Yesterday  */}
+                        <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                        </Box>
+                    </TabPanel>
+                    <TabPanel value="3">
+
+                        <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                        </Box>
+
+                    </TabPanel>
+                    <TabPanel value="4">
+                        {/* Tomorrow */}
+                        <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                        </Box>
+                    </TabPanel>
+
+                    <TabPanel value="5">
+                        {/* Sun 01 Oct */}
+                        <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                        </Box>
+                    </TabPanel>
+                    <TabPanel value="6">
+                        {/* Mon 02 Oct */}
+                        <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                        </Box>
+
+                    </TabPanel>
+                    <TabPanel value="7">
+                        {/* Tue 03 Oct */}
+                        <Box className='flex h-screen overflow-scroll  flex-col gap-5'>
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                            <MatchesDayCard />
+                            <MatchesCards />
+                        </Box>
+                    </TabPanel>
                     {/* Add more TabPanel components for additional tabs */}
                 </TabContext>
             </Box>

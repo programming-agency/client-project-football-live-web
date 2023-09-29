@@ -52,7 +52,7 @@ const Home = () => {
                 </Box>
 
                 <Box className='flex gap-3 p-2 overflow-scroll '>                     
-                    <FixtureCard />
+                    <FixtureCard  />
                     <FixtureCard />
                     <FixtureCard />
                     <FixtureCard />
