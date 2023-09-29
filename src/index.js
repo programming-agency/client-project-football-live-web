@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         element: <MoreRecentCard />
       },
       {
-        path: '/*',
+        path: '/',
         element: <Home />
       }
     ]

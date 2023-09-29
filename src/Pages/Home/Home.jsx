@@ -26,8 +26,8 @@ const Home = () => {
                     <Box className='text-xs font-semibold'>Recent Matches</Box>
 
                     <Box>
-                        
-                        <Link href="/moreRecentCard" underline="none"> See More</Link>
+
+                        <Link href="moreRecentCard" color="error" underline="none"> See More</Link>
                     </Box>
                 </Box>
                 <Box className='flex flex-col gap-2 px-3'>
@@ -42,7 +42,7 @@ const Home = () => {
             {/* weekly match section start */}
 
             <Box>
-            
+
                 <Box className="flex mt-5 gap-3  items-center px-5  ">
                     <Box className='text-xs  whitespace-nowrap  font-semibold'> Weekly Fixture</Box>
                     <Box className='w-full'>
@@ -56,7 +56,7 @@ const Home = () => {
                     </Box>
                 </Box>
 
-                <Box className='flex gap-3 p-2 overflow-scroll '>
+                <Box className='flex mb-20 gap-3 p-2 overflow-scroll '>
                     <FixtureCard />
                     <FixtureCard />
                     <FixtureCard />
