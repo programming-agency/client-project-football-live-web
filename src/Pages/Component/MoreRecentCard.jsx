@@ -1,25 +1,60 @@
-import { Box, Button } from '@mui/material'
+import { Box } from '@mui/material'
 import React from 'react'
 import RecentMatchCard from './RecentMatchCard'
 import BackButton from './BackButton'
 
-export default function MoreRecentCard() {
+export default function MoreRecentCard({ title }) {
     return (
         <Box>
-            <Box className='flex gap-20'>
+            <Box >
                 <Box>
-                    <BackButton />
+                    <BackButton title='Recent Match' />
                 </Box>
-                <Box>
-                    <Button variant='outlined'> Recent Match</Button>
-                </Box>
-            </Box>
 
-            <Box className='flex flex-col gap-2 px-3'>
+            </Box>
+            <Box className='flex flex-col h-[800px] overflow-scroll gap-2 px-3'>
                 <RecentMatchCard />
                 <RecentMatchCard />
                 <RecentMatchCard />
                 <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+                <RecentMatchCard />
+
             </Box>
         </Box>
     )
